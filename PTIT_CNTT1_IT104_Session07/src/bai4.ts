@@ -3,9 +3,8 @@ abstract class Person{
     constructor(name:string) {
         this.name = name
     }
-    displayInfo():void{
-        console.log(this.name)
-    }
+    abstract displayInfo():void
+        
 }
 class Student extends Person{
     id:number
@@ -14,7 +13,7 @@ class Student extends Person{
         this.id = id
     }
     displayInfo():void {
-        console.log(`ID:$ {this.id}. ${this.name}`)
+        console.log(`ID:${this.id}. ${this.name}`)
     }
 }
 class Teacher extends Person{
@@ -31,4 +30,5 @@ class Teacher extends Person{
 const student = new Student("thanh",128)
 const teacher = new Teacher("viet","toan")
 student.displayInfo()
+
 teacher.displayInfo()
