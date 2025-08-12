@@ -3,7 +3,9 @@ abstract class Person{
     constructor(name:string) {
         this.name = name
     }
-    abstract displayInfo():void
+    displayInfo():void{
+        console.log(this.name)
+    }
         
 }
 class Student extends Person{
