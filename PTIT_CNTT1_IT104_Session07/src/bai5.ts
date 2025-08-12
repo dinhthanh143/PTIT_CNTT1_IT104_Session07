@@ -1,7 +1,7 @@
 class Account{
     id: number
     userName: string
-    password: string
+    private password: string
     isLogin: boolean
     role: string
     constructor(id:number, userName:string,password:string,isLogin:boolean,role:string) {
@@ -39,4 +39,5 @@ class userAcc extends Account{
 }
 const user = new userAcc(12,"abc","18274haasd",true,"user",userStatus.ACTIVE)
 user.login()
+
 user.logout()
