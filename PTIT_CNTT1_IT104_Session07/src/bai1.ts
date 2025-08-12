@@ -18,4 +18,9 @@ class Manager extends Employee{
         super(name,company,phone);
         this.teamSize=teamSize
     }
+    printInfo():void{
+        super.printInfo()
+        console.log(this.teamSize)
+    }
+
 }
